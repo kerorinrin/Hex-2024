@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集</title>
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="portfolio.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/logo.svg"
+        alt="logo"></div>
+    <nav>
+      <button type="button" class="btn">
+        <span class="material-symbols-outlined menu">
+          menu
+        </span>
+        <span class="material-symbols-outlined closure close">
+          close
+        </span>
+      </button>
+      <ul class="close">
+        <li class="upperQoute navHover"><a href="index.html" class="bottomQoute navHover">首頁</a></li>
+        <li class="upperQoute navFocused"><a href="#" class="bottomQoute navFocused">作品集</a></li>
+        <li class="upperQoute navHover"><a href="#" class="bottomQoute navHover">服務項目</a></li>
+        <li class="upperQoute navHover"><a href="#" class="bottomQoute navHover">部落格</a></li>
+        <li class="upperQoute navHover"><a href="#" class="bottomQoute navHover">聯絡我</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="overlay close"></div>
+
+  <div class="content">
+    <div class="caption">
+      <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true"
+        alt="quote mark">
+      <h5>讓使用者在觀賞與使用的旅程中，<br>發現<span class="keyword">設計的價值</span></h5>
+      <h5>而我在設計與開發的過程中，<br>看見<span class="keyword">自己的價值</span></h5>
+      <img
+        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
+        alt="quote mark">
+    </div>
+    <div class="experiences">
+      <div class="ex">
+        <p>2 <span>B經</span>驗</p>
+        <p>內部監控系統、庫存系統、採購系統、行銷整合系統</p>
+      </div>
+      <div class="ex">
+        <p>2<span>C經</span>驗</p>
+        <p>跨國美妝保養電商、個人品牌網站、醫美網站、電子商務</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="workWrap">
+    <ul class="workList">
+      <li>
+        <a href="#ex1" rel="modal:open"><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image1.png?raw=true"
+            alt="work image"></a>
+
+        <div id="ex1" class="modal">
+
+          <a href="#close-modal" rel="modal:close" class="modalClose">
+            <span class="material-symbols-outlined closure close">
+              close
+            </span>
+          </a>
+          <div class="modalTitle">
+            <h2>星際旅行訂票平台</h2>
+            <p>悠遊宇宙的夢想，從這裡開始實現</p>
+          </div>
+          <div class="modalIntro">
+            <div>
+              <p>STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。</p>
+              <p>主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。</p>
+            </div>
+            <div>
+              <div>
+                <div class="subTitle">設計原則</div>
+                <div>宇宙旅行、深色背景、強烈視覺效果</div>
+              </div>
+              <div>
+                <div class="subTitle">開發方式</div>
+                <div>Bootstrap、Javascript、RWD</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="modalcardWrap">
+            <div class="modalCard">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image1.png?raw=true" alt="main visual">
+              <h5>主視覺</h5>
+              <p>可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+            </div>
+            <div class="modalCard">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/modal-image2.png?raw=true" alt="search">
+              <h5>推薦查詢</h5>
+              <p>給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="textWrap">
+          <h4>星際旅行訂票平台</h4>
+          <p>悠遊宇宙的夢想，從這裡開始實現</p>
+          <div class="tags"><a href="#">網頁設計</a><a href="#">響應式設計</a><a href="#">Bootstrap</a></div>
+        </div>
+      </li>
+      <li>
+        <a href=""><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image2.png?raw=true"
+            alt="work image"></a>
+        <div class="textWrap">
+          <h4>理財App</h4>
+          <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
+          <div class="tags"><a href="#">APP設計</a><a href="#">iOS</a><a href="#">React</a></div>
+        </div>
+      </li>
+      <li>
+        <a href=""><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image3.png?raw=true"
+            alt="work image"> </a>
+        <div class="textWrap">
+          <h4>醫美診所官網</h4>
+          <p>永保青春的秘密，從粹究開始</p>
+          <div class="tags"><a href="#">網頁設計</a><a href="#">響應式設計</a><a href="#">ＷordPress</a></div>
+        </div>
+      </li>
+      <li>
+        <a href=""><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true"
+            alt="work image"> </a>
+        <div class="textWrap">
+          <h4>美美美早餐店 POS 機 UI Design</h4>
+          <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
+          <div class="tags"><a href="#">UI 設計</a><a href="#">前端開發</a><a href="#">Wix</a></div>
+        </div>
+      </li>
+      <li>
+        <a href=""><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image5.png?raw=true"
+            alt="work image"> </a>
+        <div class="textWrap">
+          <h4>電影院訂票系統</h4>
+          <p>三步驟完成訂票，電腦手機都支援</p>
+          <div class="tags"><a href="#">前端開發</a><a href="#">後端支援</a><a href="#">Vue</a></div>
+        </div>
+      </li>
+      <li>
+        <a href=""><img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image6.png?raw=true"
+            alt="work image"></a>
+        <div class="textWrap">
+          <h4>巧克巧克形象官網設計</h4>
+          <p>三步驟完成訂票，電腦手機都支援</p>
+          <div class="tags"><a href="#">UI設計</a><a href="#">設計系統</a><a href="#">網路電商</a></div>
+        </div>
+      </li>
+    </ul>
+    <ol class="workMenu">
+      <li><a href="#" class="olActive">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+    </ol>
+  </div>
+
+  <footer>
+    <div class="contactMe">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
+        alt="logo">
+      <h6>若有數位產品設計和開發相關問題<br>歡迎填寫表單，或直接與我聯絡！</h6>
+      <h6>service@hexschool.com</h6>
+    </div>
+    <div class="contactMethod">
+      <a href="#" class="formBtn">
+        <div class="icon"><img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/list.svg"
+            alt="form"></div>填寫表單
+      </a>
+      <a href="#">
+        <div class="icon"><img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg"
+            alt="IG"></div>hexschool_demo
+      </a>
+      <a href="#">
+        <div class="icon"><img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg"
+            alt="FB"></div>hexschoolTW
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="./jquery.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> 
+
+  <script src="./all.js"></script>
+</body>
+
+</html>
