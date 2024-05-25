@@ -228,14 +228,24 @@ footer{
 
 /* header */
 header{
-	justify-content: center;
+	/* justify-content: center; */
+	justify-content:space-evenly ;
 	padding: 0;
+}
+.logo{
+	/* width: auto; */
+	/* width: 100%; */
+	width: 37%;
 }
 .logo img{
 	width: 90px;
-	margin-right: 318px;
+	/* margin-right: 318px; */
+
 }
-nav{display: flex;}
+nav{
+	width: 63%;
+	display: flex;
+}
 nav .btn{display: none;}
 nav ul.close{
 	outline: none;
@@ -243,6 +253,7 @@ nav ul.close{
 	width: 480px;
 	display: flex;
 	justify-content: space-between;
+	/* margin-right: 90px; */
 }
 nav li{
 	margin: 1em 0;
