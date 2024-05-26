@@ -348,14 +348,9 @@ h3.title{
 	justify-content: center;
 	flex-wrap: wrap;
 }
-
-
 .articleCard:nth-of-type(1),.articleCard:nth-of-type(2){
 	margin-bottom: 0;
 }
-
-
-
 .article a.btn{
 	display: none;
 }
