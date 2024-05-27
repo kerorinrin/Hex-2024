@@ -1,4 +1,4 @@
-/* -------------[ Mobile First] ------------------ */
+/* -------------[ Mobile First ] ------------------ */
 /* ---banner--- */
 .heroImg img{
 	width: 100%; height: auto;
@@ -36,11 +36,12 @@
 	margin: 0 16px;
 }
 /* ----work---- */
-.workList{
-	padding-bottom: 32px;
-}
 h3.title{
 	margin: 40px 0;
+}
+h3.title::before, h3::after{
+	position: relative;
+	top: -6px;
 }
 h3.title::before{
 	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true);
@@ -50,14 +51,8 @@ h3.title::after{
 	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true);
 	left: 16px;
 }
-h3.title::before, h3::after{
-	position: relative;
-	top: -6px;
-}
-.workList> .workItem >a > img{
-	display: block;
-	width: 100%;
-	height: auto;
+.workList{
+	padding-bottom: 32px;
 }
 .workItem:first-child> a, .workItem:last-child> a{
 	display: block;
@@ -71,13 +66,32 @@ h3.title::before, h3::after{
 .workItem:last-child> a{
 	padding: 90px 0;
 	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work3-bg.png);
-	background-position: center bottom;
+	background-position: 70%;
 }
-.workItem:first-child> a> img,.workItem:last-child> a> img{
+.workList> .workItem >a > img{
 	display: block;
-	width: 295px;
+	width: 100%;
 	height: auto;
+}
+.workItem:first-child> a> img, .imgWrap img{
+	width: 295px;
 	margin: 0 auto;
+}
+.imgWrap{
+	width: 295px;
+	height: 209px;
+	margin: 0 auto;
+}
+.imgWrap img{
+	display: block;
+	position: absolute;
+}
+.work3Shadow{
+	display: block;
+	width: 100%;
+	height: 389px;
+	background-color: rgba(13, 12, 7,.5);
+	position: absolute;
 }
 .wordWrap{
 	padding: 24px 24px 48px;
@@ -95,7 +109,7 @@ a.btn::after{
 	position: relative;
 	left: 0.5em;
 }
-.shadow{display: none;}
+
 
 /* ----service---- */
 .service{
@@ -172,10 +186,13 @@ a.btn::after{
 	display: none;
 }
 
-
-/* -------------[ desktop] ------------------ */
+/* ------------[ iPad mini ] ----------------- */
 @media(min-width: 576px){
 
+}
+
+/* -------------[ desktop ] ------------------ */
+@media(min-width: 768px){
 /* ---banner--- */
   .banner{
 		display: flex;
@@ -211,6 +228,10 @@ a.btn::after{
 	}
 
 	/* ---work--- */
+	h3.title{
+		font-size: 32px;
+		margin: 0 0 80px;
+	}
 .workList{
 	padding-bottom: 0;
 }
@@ -242,14 +263,19 @@ a.btn::after{
 }
 .workItem:last-child> a{
 	display: block;
-	width: 721px;
 	padding: 0;
 	margin-top: 176px;
 }
-.workItem:last-child> a>img{
+.imgWrap, .imgWrap img{
 	width: 721px;
-	position: absolute;
-	z-index: 2; 
+}
+.work2Shadow{
+	width: 948px;
+	height: 800px;
+	background-color: rgba(10, 16, 19,.5);
+}
+.work3Shadow{
+	height: 100%;
 }
 .workItem:nth-child(2){
 	display: block;
@@ -288,27 +314,12 @@ a.btn::after{
 	left: 50%;
 	transform: translateX(-88px);
 }
+/* /tags for #index only/ */
 .tags{
 	padding-bottom: 40px;
 	border-bottom: 1px solid#f1f1f1;
 }
-.work2Shadow{
-	width: 948px;
-	height: 800px;
-	background-color: rgba(10, 16, 19,.5);
-}
-.work3Shadow{
-	display: block;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(13, 12, 7,.5);
-	position: absolute;
-}
-h3.title{
-	font-size: 32px;
-	margin: 0 0 80px;
-	/* margin-bottom: 80px; */
-}
+
 
 	/* ---service--- */
 	.service{
