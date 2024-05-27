@@ -280,7 +280,7 @@ ol.workMenu li a{
 
 
 /* -------------[ desktop ] ------------------ */
-@media(min-width: 768px){
+@media(min-width: 992px){
 
     /* workwrap */
   ul.workList{
