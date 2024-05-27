@@ -74,11 +74,15 @@ ol.workMenu li a{
   background-color: #1e1e1e;
 }
 /* workWrap Modal */
-.blocker{padding: 68px 0;}
+.blocker{
+  padding: 68px 0;
+  z-index: 20;
+}
 .modal{
   width: 93.5%;
   border-radius: 16px;
   padding: 0;
+  z-index: 30;
 }
 .modalTitle{
   margin: 24px 0;
