@@ -103,7 +103,6 @@ ol.workMenu li a{
 .modalIntro div:first-child p:first-child{
   margin-bottom: -8px;
 }
-
 .modalIntro>div:last-child{
   color: #5b5b5b;
   margin: 24px 0;
@@ -117,6 +116,8 @@ ol.workMenu li a{
 }
 .modalcardWrap{
   padding: 40px 0;
+  background-color: #fafafa;
+  border-radius: 16px;
 }
 .modalCard{
   width: 319px;
@@ -144,11 +145,11 @@ ol.workMenu li a{
   margin-top: 32px;
 }
 .modalClose span{
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .modal a.close-modal {
-   display: none;
+  display: none;
 }
 
 
@@ -214,11 +215,8 @@ ol.workMenu li a{
     background-color: #1e1e1e;
   }
   /* workWrap Modal */
-  /* .blocker{padding: 631px 0;} */
   .modal{
   max-width: 1200px;
-  width: 56%;
-  /* padding: 0; */
   }
   .modalTitle{
     margin: 40px 0;
@@ -233,15 +231,10 @@ ol.workMenu li a{
     justify-content: center;
   }
   .modalIntro>div:first-child{
-    /* width: 632px; */
-    margin-right: 72px;
-    /* margin-left: 56px; */
-    margin-left: 4em;
+    margin-right: 1em;
+    margin-left: 2em;
     
   }
-  /* .modalIntro div:last-child{
-    display: flex;
-  } */
   .modalIntro>div:last-child>div:first-of-type{
     border-top: none;
   }
@@ -251,7 +244,6 @@ ol.workMenu li a{
   .modalIntro div:last-child{
     text-align: left;
     margin: 0;
-  
   }
   .modalIntro>div:last-child>div:first-of-type{
     padding: 0;
@@ -269,7 +261,6 @@ ol.workMenu li a{
   }
   .modalCard{
     width: 90%;
-    /* min-width: 500px; */
     max-width: 720px;
     text-align: center;
   }
@@ -279,7 +270,6 @@ ol.workMenu li a{
   .modalCard p{
     margin-top: 16px;
   }
-
 }
 
 
@@ -301,6 +291,30 @@ ol.workMenu li a{
   }
   .ex{
     margin-bottom: 14px;
+  }
+
+  /* workWrap Modal */
+  .modal{
+    max-width: 1076px;
+  }
+  .modalClose{
+    text-align: end;
+    margin-right: 40px;
+  }
+  .modalIntro div:first-child p, .modalIntro div:first-child p:first-child{
+    margin: 0;
+  }
+  .modalIntro>div:first-child {
+    margin-right: 4.5em;
+  }
+  .modalIntro{
+    margin-bottom: 40px;
+  }
+  .modalcardWrap{
+    padding: 80px 0;
+  }
+  .modalCard img{
+    margin-bottom: 1.5em;
   }
 
 }
