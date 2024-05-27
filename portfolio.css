@@ -1,7 +1,7 @@
 /* -------------[ Mobile First] ------------------ */
 /* content */
 .content{
-  padding: 20px 0 60px;
+  padding: 40px 0 60px;
   background-color: #fafafa;
 }
 .caption{
@@ -25,27 +25,29 @@
   margin-bottom: 20px;
 }
 .ex span{
- border-bottom: 1px solid #5b5b5b;
  padding-bottom: 3px;
+ border-bottom: 1px solid #5b5b5b;
 }
 .ex p:nth-of-type(2){
+  margin-top: 12px;
   color: #3b3b3b;
 }
 
 /* workWrap */
 .workWrap{
-  padding: 40px 0;
+  padding: 80px 0;
 }
 ul.workList li{
-  width: 351px;
+  /* width: 351px; */
+  width: 93.5%;
   margin: 0 auto 48px;
-  outline: .55px solid #f1f1f1;
 }
 ul.workList img{
   display: block;
   width: 100%;
   height: auto;
   border-radius: 4px;
+  border: 1px solid #f1f1f1;
 }
 .textWrap{
   margin: 1em auto 0 1em;
@@ -147,8 +149,8 @@ ol.workMenu li a{
 
 
 
-/* -------------[ desktop] ------------------ */
-@media(min-width: 576px){
+/* -------------[ iPad mini ] ------------------ */
+@media(min-width: 768px){
 
   /* content */
   .content{
@@ -195,19 +197,6 @@ ol.workMenu li a{
   /* workwrap */
   .workWrap{
     padding: 120px 0;
-  }
-  ul.workList{
-    width: 1296px;
-    margin: 0 auto 72px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 80px 24px;
-  }
-  ul.workList li{
-    width: 636px;
-    margin-bottom: 0;
-    outline: 1px solid #f1f1f1;
   }
   ul.workList img, ul.workList li{
     border-radius: 8px;
@@ -287,6 +276,27 @@ ol.workMenu li a{
     margin-top: 16px;
   }
 
+}
 
+
+/* -------------[ desktop ] ------------------ */
+@media(min-width: 768px){
+
+    /* workwrap */
+  ul.workList{
+    width: 1296px;
+    margin: 0 auto 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px 24px;
+  }
+  ul.workList li{
+    width: 636px;
+    margin-bottom: 0;
+  }
+  .ex{
+    margin-bottom: 14px;
+  }
 
 }

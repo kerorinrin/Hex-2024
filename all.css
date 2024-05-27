@@ -78,7 +78,7 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 8px 12px;
+	padding: 8.5px 12px;
 	outline: 1px solid #f1f1f1;
 	background-color: #fff;
 	position: relative;
@@ -180,6 +180,7 @@ footer{
 }
 .contactMe>h6:nth-of-type(1){
 	margin: 24px 0;
+	line-height: 26px;
 }
 .contactMe>h6:nth-of-type(2){
 	color: #919191;
@@ -228,8 +229,8 @@ footer{
 	padding: 4px 12px;
 }
 
-/* -------------[ desktop] ------------------ */
-@media(min-width: 576px){
+/* -------------[ iPad mini, desktop] ------------------ */
+@media(min-width: 768px){
 
 /* header */
 header{
@@ -275,8 +276,7 @@ footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
 	padding: 80px 0;
 	display: flex;
-	justify-content: center;
-	gap: 690px;
+	justify-content: space-around;
 }
 .contactMe{
 	text-align: left;
@@ -306,7 +306,6 @@ footer{
 .tags{
 	margin: 1.5em 0 0 0; 
 }
-
 
 
 

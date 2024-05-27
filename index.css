@@ -109,8 +109,6 @@ a.btn::after{
 	position: relative;
 	left: 0.5em;
 }
-
-
 /* ----service---- */
 .service{
 	background-color: #FAFAFA;
@@ -143,7 +141,6 @@ a.btn::after{
 	color: #3B3B3B;
   margin-bottom: 24px;
 }
-
 /* ----article---- */
 .article{
 	padding: 40px 0 80px;
@@ -187,12 +184,8 @@ a.btn::after{
 }
 
 /* ------------[ iPad mini ] ----------------- */
-@media(min-width: 576px){
-
-}
-
-/* -------------[ desktop ] ------------------ */
 @media(min-width: 768px){
+
 /* ---banner--- */
   .banner{
 		display: flex;
@@ -200,6 +193,7 @@ a.btn::after{
 	}
 	.heroImg{
 		width: 60%;
+		align-self: center;
 	}
 	.heroImg img:first-child{
 		display: none;
@@ -209,29 +203,11 @@ a.btn::after{
 	}
 	.content{
 		text-align: left;
-		margin-right: 24px;
-		align-self:center;
 	}
 	.content h1{
-		font-size: 40px;
-		margin-bottom: 24px;
+		margin-bottom: 0;
 	}
-	.content br{
-		display: none;
-	}
-	.content .sns{
-		margin-top: 60px;
-	}
-	.content .sns img{
-		width: 56px;
-		height: auto;
-	}
-
-	/* ---work--- */
-	h3.title{
-		font-size: 32px;
-		margin: 0 0 80px;
-	}
+/* ---work--- */
 .workList{
 	padding-bottom: 0;
 }
@@ -240,16 +216,18 @@ a.btn::after{
 	justify-content: center;
 	gap: 56px;
 	position: relative;
+	height: 400px;
 }
 .workItem:first-child{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true);
+	background-position: bottom;
 }
 .workItem:nth-child(2){
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true);
 }
 .workItem:last-child{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true);
-	height: 800px;
+	background-position: bottom right;
 }
 .workItem:first-child> a, .workItem:last-child> a{
 	background-image: none;
@@ -258,21 +236,15 @@ a.btn::after{
 .workItem:first-child> a{
 	padding-top: 80px;
 }
-.workItem:first-child> a>img{
-	width: 714px;
+.work2Shadow{
+	width: 49%;
+	height: 800px;
+	background-color: rgba(10, 16, 19,.5);
 }
 .workItem:last-child> a{
 	display: block;
 	padding: 0;
-	margin-top: 176px;
-}
-.imgWrap, .imgWrap img{
-	width: 721px;
-}
-.work2Shadow{
-	width: 948px;
-	height: 800px;
-	background-color: rgba(10, 16, 19,.5);
+	margin-top: 15%;
 }
 .work3Shadow{
 	height: 100%;
@@ -287,13 +259,10 @@ a.btn::after{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	margin-left: 312px;
+	margin-left: 3%;
 }
 .wordWrap{
 	box-sizing: border-box;
-	width: 526px;
-	height: 400px;
-	padding: 80px 40px 56px;
 	text-align: left;
 	position: relative;
 	align-self: center;
@@ -307,24 +276,16 @@ a.btn::after{
 	font-size: 28px;
 }
 .wordWrap a.btn{
-	font-size: 20px;
-	padding: 16px 38px;
-	margin-top: 40px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-88px);
+	margin-top: 2em;
 }
-/* /tags for #index only/ */
+ /* /tags for #index only/ */
 .tags{
-	padding-bottom: 40px;
+	padding-bottom: 1em;
 	border-bottom: 1px solid#f1f1f1;
 }
-
-
-	/* ---service--- */
+/* ---service--- */
 	.service{
 		background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
-		padding: 120px 0;
 	}
 .serviceList{
 	display: flex;
@@ -347,11 +308,7 @@ a.btn::after{
 	padding: 0;
 	padding: 16px 38px;
 }
-
-	/* ---article--- */
-.article{
-	padding: 120px 0;
-}
+/* ---article--- */
 .articleList{
 	width: auto;
 	display: flex;
@@ -380,10 +337,81 @@ a.btn::after{
 .dotNavigation .dot:first-of-type, .dot:hover{
 	background-color: #000;
 }
+}
 
+/* -------------[ desktop ] ------------------ */
+@media(min-width: 992px){
 
-
+	/* ---banner--- */
+	.content{
+		margin-right: 24px;
+		margin-right: 1.26%;
+		align-self:center;
+	}
+	.content h1{
+		font-size: 40px;
+		margin-bottom: 24px;
+	}
+	.content br{
+		display: none;
+	}
+	.content .sns{
+		margin-top: 60px;
+	}
+	.content .sns img{
+		width: 56px;
+		height: auto;
+	}
+		/* ---work--- */
+		h3.title{
+			font-size: 32px;
+			margin: 120px 0 80px;
+		}
+	.workItem{
+		height: auto;
+	}
+	.wordWrap{
+		width: 526px;
+		height: 400px;
+		padding: 80px 40px 56px;
+	}
+	.wordWrap a.btn{
+		font-size: 20px;
+		padding: 16px 38px;
+		margin-top: 40px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-88px);
+	}
+	.workItem:first-child> a>img{
+	width: 714px;
+	}
+	.workItem:nth-child(2)> .wordWrap{
+		margin-left: 312px;
+	}
+	.workItem:last-child{
+			height: 800px;
+	}
+	.workItem:last-child> a{
+		margin-top: 176px;
+	}
+	.imgWrap, .imgWrap img{
+	width: 721px;
+	}
+	.work2Shadow{
+}
+/* /tags for #index only/ */
+.tags{
+	padding-bottom: 40px;
+	border-bottom: 1px solid#f1f1f1;
+}
+/* ---service & article--- */
+.service, .article{
+	padding: 120px 0;
+}
+.service h3.title, .article h3.title{
+	margin-top: 0;
+}
 
 
 }
-
