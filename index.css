@@ -36,21 +36,6 @@
 	margin: 0 16px;
 }
 /* ----work---- */
-h3.title{
-	margin: 40px 0;
-}
-h3.title::before, h3::after{
-	position: relative;
-	top: -6px;
-}
-h3.title::before{
-	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true);
-	right: 16px;
-}
-h3.title::after{
-	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true);
-	left: 16px;
-}
 .workList{
 	padding-bottom: 32px;
 }
@@ -109,38 +94,7 @@ a.btn::after{
 	position: relative;
 	left: 0.5em;
 }
-/* ----service---- */
-.service{
-	background-color: #FAFAFA;
-	padding: 40px 0 80px 0;
-}
-.serviceCard{
-	width: 306px;
-	height: 306px;
-	margin: 24px auto;
-	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true);
-	border-radius: 16px;
-	position: relative;
-}
-.serviceCard img{
-	position: absolute;
-	top: 86.5px;
-	left: 113px;
-}
-.serviceCard h3{
-	position: absolute;
-	top: 190.5px;
-	left: 105px;
-	color: #fff;
-	margin: 0 auto;
-}
-.serviceContact{
-	margin-top: 40px;
-}
-.serviceContact h5{
-	color: #3B3B3B;
-  margin-bottom: 24px;
-}
+
 /* ----article---- */
 .article{
 	padding: 40px 0 80px;
@@ -283,31 +237,7 @@ a.btn::after{
 	padding-bottom: 1em;
 	border-bottom: 1px solid#f1f1f1;
 }
-/* ---service--- */
-	.service{
-		background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
-	}
-.serviceList{
-	display: flex;
-	justify-content: center;
-	gap: 24px;
-	flex-wrap: wrap;
-}
-.serviceCard{
-	margin: 0;
-}
-.serviceContact{
-	margin-top: 80px;
-}
-.serviceContact h5{
-	font-size: 28px;
-	margin-bottom: 40px;
-}
-.serviceContact a.btn{
-	font-size: 20px;
-	padding: 0;
-	padding: 16px 38px;
-}
+
 /* ---article--- */
 .articleList{
 	width: auto;
@@ -405,11 +335,11 @@ a.btn::after{
 	padding-bottom: 40px;
 	border-bottom: 1px solid#f1f1f1;
 }
-/* ---service & article--- */
-.service, .article{
+/* ---article--- */
+.article{
 	padding: 120px 0;
 }
-.service h3.title, .article h3.title{
+.article h3.title{
 	margin-top: 0;
 }
 

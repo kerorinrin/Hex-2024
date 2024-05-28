@@ -21,7 +21,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	/* font-family: "Noto Sans TC", "Noto Sans", sans-serif; */
+	font-family: "Noto Sans TC", "Noto Sans", sans-serif;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -169,6 +169,78 @@ nav span.close{display: none;}
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* ----service---- */
+.service{
+	background-color: #FAFAFA;
+	padding: 40px 0 80px 0;
+}
+.serviceCard{
+	width: 306px;
+	height: 306px;
+	margin: 24px auto 0;
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true);
+	border-radius: 16px;
+	position: relative;
+}
+.serviceCard img{
+	position: absolute;
+	top: 86.5px;
+	left: 113px;
+}
+.serviceCard h3{
+	position: absolute;
+	top: 190.5px;
+	left: 105px;
+	color: #fff;
+	margin: 0 auto;
+}
+.serviceContact{
+	margin-top: 40px;
+}
+.serviceContact h5{
+	color: #3B3B3B;
+  margin-bottom: 24px;
+}
+/* workWrap */
+.workWrap{
+  padding: 80px 0;
+}
+ul.workList li{
+  width: 93.5%;
+  margin: 0 auto 48px;
+}
+ul.workList img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #f1f1f1;
+}
+.textWrap{
+  margin: 1em auto 0 1em;
+  text-align: left;
+}
+.textWrap p{
+  color: #919191;
+}
+ol.workMenu{
+  width: 152px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+ol.workMenu li a{
+  font-size: 24px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+.olActive{
+  color: #fff;
+  background-color: #1e1e1e;
+}
+
 /* ----footer---- */
 footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
@@ -217,6 +289,23 @@ footer{
 	background-position: bottom;
 }
 
+/* h3.title deco */
+h3.title{
+	margin: 40px 0;
+}
+h3.title::before, h3::after{
+	position: relative;
+	top: -6px;
+}
+h3.title::before{
+	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true);
+	right: 16px;
+}
+h3.title::after{
+	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true);
+	left: 16px;
+}
+
 /* tags */
 .tags{
 	margin: 16px 0 20px;
@@ -229,7 +318,7 @@ footer{
 	padding: 4px 12px;
 }
 
-/* -------------[ iPad mini, desktop] ------------------ */
+/* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
 
 /* header */
@@ -271,6 +360,47 @@ nav a{
 .showQoute::before, .showQoute::after{
 	opacity: 1;
 }
+/* ---service--- */
+.service{
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
+}
+.serviceList{
+display: flex;
+justify-content: center;
+gap: 24px;
+flex-wrap: wrap;
+}
+.serviceCard{
+margin: 0;
+}
+.serviceContact{
+margin-top: 80px;
+}
+.serviceContact h5{
+font-size: 28px;
+margin-bottom: 40px;
+}
+.serviceContact a.btn{
+font-size: 20px;
+padding: 0;
+padding: 16px 38px;
+}
+
+/* workwrap */
+.workWrap{
+	padding: 120px 0;
+}
+ul.workList img, ul.workList li{
+	border-radius: 8px;
+}
+.textWrap h4{
+	font-size: 28px;
+	margin: 1rem 0 .5rem;
+}
+.workMenu li a:hover{
+	color: #fff;
+	background-color: #1e1e1e;
+}
 /* ----footer---- */
 footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
@@ -308,9 +438,33 @@ footer{
 }
 
 
-
-
-
 }
 
+/* -------------[ desktop ] ------------------ */
+@media(min-width: 992px){
 
+	/* ---service--- */
+.service{
+	padding: 120px 0;
+}
+.service h3.title{
+	margin-top: 0;
+}
+  /* workwrap */
+  ul.workList{
+    width: 1296px;
+    margin: 0 auto 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px 24px;
+  }
+  ul.workList li{
+    width: 636px;
+    margin-bottom: 0;
+  }
+  .ex{
+    margin-bottom: 14px;
+  }
+
+}
