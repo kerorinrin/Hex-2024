@@ -1,6 +1,6 @@
 /* -------------[ Mobile First] ------------------ */
-/* content */
-.content{
+/* banner */
+.banner{
   padding: 40px 0 60px;
   background-color: #fafafa;
 }
@@ -117,8 +117,8 @@
 /* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
 
-  /* content */
-  .content{
+  /* banner */
+  .banner{
     padding: 40px 0 80px;
   }
   .caption{
