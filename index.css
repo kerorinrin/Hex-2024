@@ -191,8 +191,8 @@ a.btn::after{
 	padding-top: 80px;
 }
 .work2Shadow{
-	width: 49%;
-	height: 800px;
+	width: 60%;
+	height: 400px;
 	background-color: rgba(10, 16, 19,.5);
 }
 .introItem:last-child> a{
@@ -298,7 +298,7 @@ a.btn::after{
 			margin: 120px 0 80px;
 		}
 	.introItem{
-		height: auto;
+		height: 800px;
 	}
 	.wordWrap{
 		width: 526px;
@@ -317,7 +317,7 @@ a.btn::after{
 	width: 714px;
 	}
 	.introItem:nth-child(2)> .wordWrap{
-		margin-left: 312px;
+		margin-left: 16.5%;
 	}
 	.introItem:last-child{
 			height: 800px;
@@ -329,6 +329,8 @@ a.btn::after{
 	width: 721px;
 	}
 	.work2Shadow{
+		width: 50%;
+		height: 800px;
 }
 /* /tags for #index only/ */
 .tags{
