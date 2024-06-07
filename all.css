@@ -156,6 +156,9 @@ nav ul li a{
 nav ul li a:hover .qoute{
 	opacity: 1;
 }
+nav ul li a:hover{
+	font-weight: bold;
+}
 .active{
 	font-weight: bold;
 	opacity: 1;
