@@ -120,7 +120,6 @@
 
 /* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
-
   /* banner */
   .banner{
     padding: 40px 0 80px;
@@ -220,10 +219,8 @@
   }
 }
 
-
 /* -------------[ desktop ] ------------------ */
 @media(min-width: 992px){
-
   /* workWrap Modal */
   .modal{
     max-width: 1076px;

@@ -133,7 +133,6 @@ ul.quizList li{
 
 /* -------------[ desktop ] ------------------ */
 @media(min-width: 992px){
-
 h3.title, .QA h3.title{
   margin-bottom: 80px;
   font-size: 32px;

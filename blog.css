@@ -56,13 +56,11 @@ h3.title+p{
   .articleList li{
     width: auto;
     margin-bottom: 0;
-    /* margin-bottom: 64px; */
   }
   .articleList li:last-of-type{
     margin-bottom: 0;
   }
   .wrapRight{
-    /* margin: 0 24px 0 16px; */
     margin-left: 16px;
   }
   .wrapRight h4{

@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -173,7 +172,6 @@ nav span.close{display: none;}
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 }
-
 /* ----services---- */
 .services{
 	background-color: #FAFAFA;
@@ -326,7 +324,6 @@ footer{
 .contactMethod>a:nth-of-type(2){
 	margin: 24px 0;
 }
-
 /* keyword */
 .keyword{
 	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/mark.png);
@@ -349,7 +346,6 @@ h3.title::after{
 	content:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true);
 	left: 16px;
 }
-
 /* tags */
 .tags{
 	margin: 16px 0 20px;
@@ -388,22 +384,16 @@ ul.overflowMenu> li> a{
 
 /* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
-
 /* header */
 header{
-	/* justify-content: center; */
 	justify-content:space-evenly ;
 	padding: 0;
 }
 .logo{
-	/* width: auto; */
-	/* width: 100%; */
 	width: 37%;
 }
 .logo img{
 	width: 90px;
-	/* margin-right: 318px; */
-
 }
 nav{
 	width: 63%;
@@ -416,7 +406,6 @@ nav ul.close{
 	width: 480px;
 	display: flex;
 	justify-content: space-between;
-	/* margin-right: 90px; */
 }
 nav li{
 	margin: 1em 0;
@@ -493,7 +482,6 @@ ul.workList img, ul.workList li{
 	color: #fff;
 	background-color: #1e1e1e;
 }
-
 /* ----footer---- */
 footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
@@ -534,7 +522,6 @@ footer{
 
 /* -------------[ desktop ] ------------------ */
 @media(min-width: 992px){
-
 	/* ---service--- */
 .services{
 	padding: 120px 0;

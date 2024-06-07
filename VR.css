@@ -39,8 +39,6 @@ p.author{
   flex-direction: column;
   gap: 32px;
   margin-bottom: 32px;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
 }
 figure{
   width: 351px;
@@ -92,7 +90,6 @@ ul.articleList li a img{
     margin-bottom: 64px;
   }
   .figureWrap{
-    /* display: flex; */
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -170,5 +167,4 @@ ul.articleList li a img{
   .descWrap h4{
     margin: 16px 8px;
   }
-
 }

@@ -42,9 +42,5 @@ $('#footerBtn3').hover(function () {
 }
 )
 
-
-
-
-
 });
 
