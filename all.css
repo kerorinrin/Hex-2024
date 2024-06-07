@@ -52,7 +52,7 @@ table {
 /* -------------[ Mobile First] ------------------ */
 /* General */
 body{
-  font-family: "Noto Sans TC", "Noto Sans",  sans-serif;
+  font-family: "Noto Sans TC", "Noto Sans", sans-serif;
 	line-height: 1.5;
 	text-align: center;
 }
@@ -97,7 +97,8 @@ header{
 	padding: 6px 5px;
 }
 span.material-symbols-outlined{
-	width: 30px;height: 20px;
+	width: 30px;
+	height: 20px;
 }
 nav ul{
 	position: absolute;
@@ -112,51 +113,55 @@ nav ul{
 nav li{
 	margin: 1.5em 0;
 }
-nav a{
+nav ul li a{
   color: #000;
 	text-decoration: none;
 	font-size: 20px;
 	display: inline-block;
 	padding: 4px 8px;
+	position: relative;
 }
-
 /* -----------Nav Qoute Mark Design----------- */
-.upperQoute::before, .upperQoute::after, .bottomQoute::before, .bottomQoute::after{
-	content: '';
-	display: inline-block;
+.qoute{
+	display: block;
 	width: 8px;
 	height: 8px;
-	box-sizing: border-box;
-	position: relative;
+	border:1px solid #919191;
 	opacity: 0;
+	position: absolute;
 }
-.upperQoute::before, .upperQoute::after{
-	border-bottom: 1px solid #919191;
-	top: 11px;
+.topL{
+	top: 0;
+	left: 0;
+	border-right: none;
+	border-bottom: none;
 }
-.bottomQoute::before, .bottomQoute::after{
-	border-top: 1px solid #919191;
-	top: -19px;
+.topR{
+	top: 0;
+	right: 0;
+	border-left: 0;
+	border-bottom: none;
 }
-.upperQoute::before,.bottomQoute::before{
-	border-left: 1px solid #919191;
+.botL{
+	bottom: 0;
+	left: 0;
+	border-top: none;
+	border-right: none;
 }
-.upperQoute::after,  .bottomQoute::after{
-	border-right: 1px solid #919191;
+.botR{
+	bottom: 0;
+	right: 0;
+	border-top: none;
+	border-left: none;
 }
-.upperQoute::before{
-	left: 16px;
+nav ul li a:hover .qoute{
+	opacity: 1;
 }
-.upperQoute::after{
-	left: -16px;
-}
-/* Nav Focused effect*/
-.navFocused, .navFocused::before, .navFocused::after{
+.active{
 	font-weight: bold;
 	opacity: 1;
 }
 /* ---------------------------- */
-
 nav span.close{display: none;}
 .close{display: none;}
 .overlay{
@@ -169,12 +174,12 @@ nav span.close{display: none;}
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* ----service---- */
-.service{
+/* ----services---- */
+.services{
 	background-color: #FAFAFA;
 	padding: 40px 0 80px 0;
 }
-.serviceCard{
+.serviceList li{
 	width: 306px;
 	height: 306px;
 	margin: 24px auto 0;
@@ -182,12 +187,12 @@ nav span.close{display: none;}
 	border-radius: 16px;
 	position: relative;
 }
-.serviceCard img{
+.serviceList li img{
 	position: absolute;
 	top: 86.5px;
 	left: 113px;
 }
-.serviceCard h3{
+.serviceList li h3{
 	position: absolute;
 	top: 190.5px;
 	left: 105px;
@@ -200,6 +205,49 @@ nav span.close{display: none;}
 .serviceContact h5{
 	color: #3B3B3B;
   margin-bottom: 24px;
+}
+/* ----article---- */
+.article{
+	padding: 40px 0 80px;
+}
+.articleList{
+	width: 351px;
+	margin: 40px auto;
+}
+.articleList li:nth-of-type(1),.articleList li:nth-of-type(2){
+	margin-bottom: 48px;
+}
+.articleList li>a{
+	display: block;
+	margin: 0 auto;
+}
+.articleList li>a>img{
+	width: 100%;
+	height: 234px;
+	display: block;
+	border-radius: 8px;
+	outline: 1px solid #f1f1f1;
+}
+.articleList li>h4{
+	text-align: left;
+	margin: 16px 8px;
+}
+.tagDate{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 8px;
+}
+.tagDate a{
+	display: inline-block;
+	background-color: #F1F1F1;
+	padding: 4px 12px;
+	border-radius: 16px;
+}
+.tagDate div{
+	color: #5b5b5b;
+}
+.dotNavigation{
+	display: none;
 }
 /* workWrap */
 .workWrap{
@@ -240,7 +288,6 @@ ol.workMenu li a{
   color: #fff;
   background-color: #1e1e1e;
 }
-
 /* ----footer---- */
 footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
@@ -271,6 +318,11 @@ footer{
 	padding: 4px 0 4px 24px;
 	text-indent: .5em;
 }
+.contactMethod a:hover{
+	outline: none;
+	color: #fff;
+	background-color: #000;
+}
 .contactMethod>a:nth-of-type(2){
 	margin: 24px 0;
 }
@@ -281,7 +333,6 @@ footer{
 	background-repeat: no-repeat;
 	background-position: bottom;
 }
-
 /* h3.title deco */
 h3.title{
 	margin: 40px 0;
@@ -309,6 +360,30 @@ h3.title::after{
 	border-radius: 16px;
 	margin-right: 8px;
 	padding: 4px 12px;
+}
+/* overflow menu */
+.menuWrap{
+  width: 100%;
+  background-color: #fafafa;
+}
+ul.overflowMenu{
+  display: flex;
+  gap: 32px;
+  padding: 20px 12px;
+  overflow-x: auto;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;}
+}
+ul.overflowMenu> li> a{
+  display: inline-block;
+  padding: 2px 0;
+  color: #5b5b5b;
+}
+.menuWrap .overflowMenu li a:hover, .menuWrap .overflowMenu li a.active{
+  color: #1e1e1e;
+	font-weight: bold;
+  border-bottom: 1px solid #1e1e1e;
 }
 
 /* -------------[ iPad mini ] ------------------ */
@@ -346,15 +421,11 @@ nav ul.close{
 nav li{
 	margin: 1em 0;
 }
-nav a{
+nav ul li a{
 	font-size: 16px;
 }
-/* nav hover effect */
-.showQoute::before, .showQoute::after{
-	opacity: 1;
-}
 /* ---service--- */
-.service{
+.services{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true);
 }
 .serviceList{
@@ -363,7 +434,7 @@ justify-content: center;
 gap: 24px;
 flex-wrap: wrap;
 }
-.serviceCard{
+.serviceList li{
 margin: 0;
 }
 .serviceContact{
@@ -378,7 +449,35 @@ font-size: 20px;
 padding: 0;
 padding: 16px 38px;
 }
-
+/* ---article--- */
+.articleList{
+	width: auto;
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.articleList li:nth-of-type(1),.articleList li:nth-of-type(2){
+	margin-bottom: 0;
+}
+.article a.btn{
+	display: none;
+}
+.dotNavigation{
+	display: block;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+.dot{
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #E9E9E9;
+}
+.dotNavigation .dot:first-of-type, .dot:hover{
+	background-color: #000;
+}
 /* workwrap */
 .workWrap{
 	padding: 120px 0;
@@ -394,6 +493,7 @@ ul.workList img, ul.workList li{
 	color: #fff;
 	background-color: #1e1e1e;
 }
+
 /* ----footer---- */
 footer{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
@@ -419,15 +519,6 @@ footer{
 .contactMethod a{
 	padding: 8px 0;
 }
-.contactMethod a:hover{
-	outline: none;
-	color: #fff;
-	background-color: #000;
-}
-/* .contactMethod>svg:hover{
- fill: #fff;
-} */
-
 .contactMethod svg{
 	margin-left: 24px;
 }
@@ -435,18 +526,29 @@ footer{
 .tags{
 	margin: 1.5em 0 0 0; 
 }
+/* overflow menu */
+.overflowMenu{
+	justify-content: space-around;
+} 
 }
 
 /* -------------[ desktop ] ------------------ */
 @media(min-width: 992px){
 
 	/* ---service--- */
-.service{
+.services{
 	padding: 120px 0;
 }
-.service h3.title{
+.services h3.title{
 	margin-top: 0;
 }
+	/* ---article--- */
+	.article{
+		padding: 120px 0;
+	}
+	.article h3.title{
+		margin-top: 0;
+	}
   /* workwrap */
   ul.workList{
     width: 1296px;
@@ -463,5 +565,23 @@ footer{
   .ex{
     margin-bottom: 14px;
   }
-
+	/* overflow menu */
+	.contentWrap{
+    display: flex;
+    flex-direction: row-reverse;
+		justify-content: space-between;
+		width: 67.5%;
+		gap: 10.34%;
+    max-width: 1296px;
+    margin: 80px auto 120px;
+  }
+	.menuWrap{
+    width: auto;
+    border-radius: 8px;
+  }
+  ul.overflowMenu{
+    flex-direction: column;
+    font-size: 20px;
+    padding: 80px 106px 0 80px;
+  }
 }

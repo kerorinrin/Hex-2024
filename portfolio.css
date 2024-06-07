@@ -24,15 +24,20 @@
 .ex{
   margin-bottom: 20px;
 }
-.ex span{
- padding-bottom: 3px;
- border-bottom: 1px solid #5b5b5b;
+.ex P:first-of-type::after{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #C1C1C1;
+  position: relative; 
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .ex p:nth-of-type(2){
-  margin-top: 12px;
   color: #3b3b3b;
 }
-
 /* workWrap Modal */
 .blocker{
   padding: 68px 0;
@@ -107,12 +112,11 @@
 .modalClose span{
   width: 32px;
   height: 32px;
+  font-weight: bold;
 }
 .modal a.close-modal {
   display: none;
 }
-
-
 
 /* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
@@ -158,8 +162,6 @@
   .ex{
     width: 298px;
   }
-
-  
   /* workWrap Modal */
   .modal{
   max-width: 1200px;
@@ -245,5 +247,4 @@
   .modalCard img{
     margin-bottom: 1.5em;
   }
-
 }

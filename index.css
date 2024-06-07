@@ -39,26 +39,26 @@
 .introList{
 	padding-bottom: 32px;
 }
-.introItem:first-child> a, .introItem:last-child> a{
+.introList li:first-child> a, .introList li:last-child> a{
 	display: block;
 	width: 100%;
 	background-size: cover;
 }
-.introItem:first-child> a{
+.introList li:first-child> a{
 	padding-top: 93px;
 	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work1-bg.png);
 }
-.introItem:last-child> a{
+.introList li:last-child> a{
 	padding: 90px 0;
 	background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work3-bg.png);
 	background-position: 70%;
 }
-.introList> .introItem >a > img{
+.introList> li >a > img{
 	display: block;
 	width: 100%;
 	height: auto;
 }
-.introItem:first-child> a> img, .imgWrap img{
+.introList li:first-child> a> img, .imgWrap img{
 	width: 295px;
 	margin: 0 auto;
 }
@@ -95,48 +95,6 @@ a.btn::after{
 	left: 0.5em;
 }
 
-/* ----article---- */
-.article{
-	padding: 40px 0 80px;
-}
-.articleList{
-	width: 351px;
-	margin: 40px auto;
-}
-.articleCard:nth-of-type(1),.articleCard:nth-of-type(2){
-	margin-bottom: 48px;
-}
-.articleCard>a{
-	display: block;
-	margin: 0 auto;
-}
-.articleCard>a>img{
-	width: 100%;
-	height: 234px;
-	display: block;
-	border-radius: 8px;
-	outline: 1px solid #f1f1f1;
-}
-.articleCard>h5{
-	color: #3B3B3B;
-	text-align: left;
-	margin: 16px 8px;
-}
-.tagDate{
-	display: flex;
-	justify-content: space-between;
-	margin: 0 8px;
-}
-.tagDate a{
-	display: inline-block;
-	background-color: #F1F1F1;
-	padding: 4px 12px;
-	border-radius: 16px;
-}
-.dotNavigation{
-	display: none;
-}
-
 /* ------------[ iPad mini ] ----------------- */
 @media(min-width: 768px){
 
@@ -165,51 +123,49 @@ a.btn::after{
 .introList{
 	padding-bottom: 0;
 }
-.introItem{
+.introList li{
 	display: flex;
 	justify-content: center;
 	gap: 56px;
 	position: relative;
 	height: 400px;
 }
-.introItem:first-child{
+.introList li:first-child{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true);
 	background-position: bottom;
 }
-.introItem:nth-child(2){
+.introList li:nth-child(2){
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true);
+	display: block;
 }
-.introItem:last-child{
+.introList li:last-child{
 	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true);
 	background-position: bottom right;
 }
-.introItem:first-child> a, .introItem:last-child> a{
+.introList li:first-child> a, .introList li:last-child> a{
 	background-image: none;
 	width: auto;
 }
-.introItem:first-child> a{
+.introList li:first-child> a{
 	padding-top: 80px;
+}
+.introList li:nth-child(2)> a{
+	display: none;
+}
+.introList li:last-child> a{
+	display: block;
+	padding: 0;
+	margin-top: 15%;
 }
 .work2Shadow{
 	width: 60%;
 	height: 400px;
 	background-color: rgba(10, 16, 19,.5);
 }
-.introItem:last-child> a{
-	display: block;
-	padding: 0;
-	margin-top: 15%;
-}
 .work3Shadow{
 	height: 100%;
 }
-.introItem:nth-child(2){
-	display: block;
-}
-.introItem:nth-child(2)> a{
-	display: none;
-}
-.introItem:nth-child(2)> .wordWrap{
+.introList li:nth-child(2)> .wordWrap{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -234,38 +190,11 @@ a.btn::after{
 }
  /* /tags for #index only/ */
 .tags{
-	padding-bottom: 1em;
+	padding-bottom: 40px;
 	border-bottom: 1px solid#f1f1f1;
 }
-
-/* ---article--- */
-.articleList{
-	width: auto;
-	display: flex;
-	gap: 24px;
-	justify-content: center;
-	flex-wrap: wrap;
-}
-.articleCard:nth-of-type(1),.articleCard:nth-of-type(2){
-	margin-bottom: 0;
-}
-.article a.btn{
-	display: none;
-}
-.dotNavigation{
-	display: block;
-	display: flex;
-	justify-content: center;
-	gap: 1em;
-}
-.dot{
-	width: 12px;
-	height: 12px;
-	border-radius: 100%;
-	background-color: #E9E9E9;
-}
-.dotNavigation .dot:first-of-type, .dot:hover{
-	background-color: #000;
+.tags a{
+	background-color: #fff;
 }
 }
 
@@ -293,11 +222,11 @@ a.btn::after{
 		height: auto;
 	}
 		/* ---workIntro--- */
-		h3.title{
-			font-size: 32px;
-			margin: 120px 0 80px;
-		}
-	.introItem{
+	h3.title{
+		font-size: 32px;
+		margin: 120px 0 80px;
+	}
+	.introList li{
 		height: 800px;
 	}
 	.wordWrap{
@@ -313,37 +242,26 @@ a.btn::after{
 		left: 50%;
 		transform: translateX(-88px);
 	}
-	.introItem:first-child> a>img{
+	.introList li:first-child> a>img{
 	width: 714px;
 	}
-	.introItem:nth-child(2)> .wordWrap{
-		margin-left: 16.5%;
+	.work2Shadow{
+		width: 50%;
+		min-width: 526px;
+		height: 800px;
+		padding-top: 200px;
+}
+	.work2Shadow> .wordWrap{
+		margin: 0 110px 0 auto;
 	}
-	.introItem:last-child{
+	.introList li:last-child{
 			height: 800px;
 	}
-	.introItem:last-child> a{
+	.introList li:last-child> a{
 		margin-top: 176px;
 	}
 	.imgWrap, .imgWrap img{
 	width: 721px;
 	}
-	.work2Shadow{
-		width: 50%;
-		height: 800px;
-}
-/* /tags for #index only/ */
-.tags{
-	padding-bottom: 40px;
-	border-bottom: 1px solid#f1f1f1;
-}
-/* ---article--- */
-.article{
-	padding: 120px 0;
-}
-.article h3.title{
-	margin-top: 0;
-}
-
 
 }

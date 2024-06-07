@@ -16,17 +16,6 @@ $('.overlay').click(function(){
 })
 
 
-//  ☆　header nav a hovering effect
-$('.navHover').hover(function () {
-    // over
-    $(this).addClass('showQoute');
-  }, function () {
-    // out
-    $(this).removeClass('showQoute');
-  }
-)
-
-
 //  ☆　footer button hover effect(svg color change)
 $('#footerBtn1').hover(function () {
   // mouse enter

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +8,10 @@
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-
 
 <body>
   <header>
@@ -32,11 +28,17 @@
         </span>
       </button>
       <ul class="close">
-        <li class="upperQoute navFocused"><a href="index.html" class="bottomQoute navFocused">首頁</a></li>
-        <li class="upperQoute navHover"><a href="portfolio.html" class="bottomQoute navHover">作品集</a></li>
-        <li class="upperQoute navHover"><a href="services.html" class="bottomQoute navHover">服務項目</a></li>
-        <li class="upperQoute navHover"><a href="#" class="bottomQoute navHover">部落格</a></li>
-        <li class="upperQoute navHover"><a href="#" class="bottomQoute navHover">聯絡我</a></li>
+        <li><a href="index.html" class="active">首頁<span class="qoute topL active"></span><span
+              class="qoute topR active"></span><span class="qoute botR active"></span><span
+              class="qoute botL active"></span></a></li>
+        <li><a href="portfolio.html">作品集<span class="qoute topL"></span><span class="qoute topR"></span><span
+              class="qoute botR"></span><span class="qoute botL"></span></a></li>
+        <li><a href="services.html">服務項目<span class="qoute topL"></span><span class="qoute topR"></span><span
+              class="qoute botR"></span><span class="qoute botL"></span></a></li>
+        <li><a href="blog.html">部落格<span class="qoute topL"></span><span class="qoute topR"></span><span
+              class="qoute botR"></span><span class="qoute botL"></span></a></li>
+        <li><a href="#contact">聯絡我<span class="qoute topL"></span><span class="qoute topR"></span><span
+              class="qoute botR"></span><span class="qoute botL"></span></a></li>
       </ul>
     </nav>
   </header>
@@ -52,7 +54,7 @@
     <div class="content">
       <h1>Hi！我是 Noel</h1>
       <p>具有 10 年經驗的 <br><span class="keyword">資深 UI 設計師</span><span>兼</span><span class="keyword">前端工程師</span></p>
-      <p>技術雙修並行， <br> 熱衷於優化使用者的網頁體驗</p>
+      <p>技術雙修並行，<br>熱衷於優化使用者的網頁體驗</p>
       <p>WEB DEVELOPMENT / BRANDING /<br>
         UI / UX / APP DESIGN</p>
       <div class="sns">
@@ -72,7 +74,7 @@
   <div class="workIntro">
     <h3 class="title">作品介紹</h3>
     <ul class="introList">
-      <li class="introItem">
+      <li>
         <a href="#"><img
             src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work1.png"
             alt="work1"></a>
@@ -83,21 +85,22 @@
           <a href="#" class="btn">完整介紹</a>
         </div>
       </li>
-      <li class="introItem">
-        <div class="work2Shadow"></div>
+      <li>
         <a href="#"><img
-            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work2-sm.png"
-            alt="work2"></a>
+          src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work2-sm.png"
+          alt="work2"></a>
+          <div class="work2Shadow">
         <div class="wordWrap">
           <h5>理財APP</h5>
           <p>連動帳戶與行動支付，讓 AI 提供您最好的理<br>財建議</p>
           <div class="tags"><a href="#">APP設計</a><a href="#">iOS</a><a href="#">React</a></div>
           <a href="#" class="btn">完整介紹</a>
         </div>
+      </div>
       </li>
-      <li class="introItem">
+      <li>
         <div class="work3Shadow"></div>
-        <a href="">
+        <a href="#">
           <div class="imgWrap">
             <img
               src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/homepage-work3.png"
@@ -114,28 +117,28 @@
     </ul>
   </div>
 
-  <div class="service">
+  <div class="services">
     <h3 class="title">服務項目</h3>
     <ul class="serviceList">
-      <li class="serviceCard">
+      <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-visual.svg"
           alt="service1">
         <h3>平面設計</h3>
       </li>
-      <li class="serviceCard">
+      <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-ui.svg"
           alt="service2">
         <h3>UI 設計</h3>
       </li>
-      <li class="serviceCard">
+      <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-html%26css.svg"
           alt="service3">
         <h3>切版服務</h3>
       </li>
-      <li class="serviceCard">
+      <li>
         <img
           src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/service-item-front-end.svg"
           alt="service4">
@@ -155,7 +158,7 @@
         <a href="#"><img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image1.png?raw=true"
             alt="article1"></a>
-        <h5>Vision Pro 登場！Vision Pro UI/UX <br>設計重點大公開 (上)</h5>
+        <h4>Vision Pro 登場！Vision Pro UI/UX <br>設計重點大公開 (上)</h4>
         <div class="tagDate">
           <a href="#">UI/UX 新知</a>
           <div>2024/02/10</div>
@@ -165,7 +168,7 @@
         <a href=""><img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image2.png?raw=true"
             alt="article2"></a>
-        <h5>給設計師和工程師的 Figma-Dev <br> Mode 開發模式使用指南 (下)</h5>
+        <h4>給設計師和工程師的 Figma-Dev <br> Mode 開發模式使用指南 (下)</h4>
         <div class="tagDate">
           <a href="#">UI/UX 新知</a>
           <div>2023/11/20</div>
@@ -175,7 +178,7 @@
         <a href=""><img
             src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/article-image3.png?raw=true"
             alt="article3"></a>
-        <h5>給設計師和工程師的 Figma-Dev <br> Mode 開發模式使用指南 (上)</h5>
+        <h4>給設計師和工程師的 Figma-Dev <br> Mode 開發模式使用指南 (上)</h4>
         <div class="tagDate">
           <a href="#">UI/UX 新知</a>
           <div>2023/10/18</div>
@@ -192,7 +195,7 @@
     </div>
   </div>
   <footer>
-    <div class="contactMe">
+    <div class="contactMe" id="contact">
       <img
         src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
         alt="logo">

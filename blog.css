@@ -1,0 +1,91 @@
+/* -------------[ Mobile First ] ------------------ */
+h3.title{
+  margin-bottom: 16px;
+}
+h3.title+p{
+  color: #919191;
+  margin-bottom: 40px;
+}
+.articleList{
+  margin: 0 auto;
+  text-align: left;
+  padding: 40px 0;
+}
+.articleList li{
+  width: 306px;
+  margin: 0 auto 40px;
+}
+.articleList li>a>img{
+  width: 306px;
+  height: 220px;
+}
+.wrapRight{
+  margin-left: 8px;
+}
+.tagDate{
+  margin: 16px 0;
+}
+.wrapRight p{
+  color: #3b3b3b;
+}
+.wrapRight p:last-of-type{
+  display: none;
+}
+/* ------------[ iPad mini ] ----------------- */
+@media(min-width: 768px){
+  .articleList{
+    width: 80%;
+  }
+}
+
+/* -------------[ desktop ] ------------------ */
+@media(min-width: 992px){
+  h3.title{
+    margin: 120px 0 24px;
+  }
+  .contentWrap{
+    gap: 1.9%;
+  }
+  .articleList li{
+    display: flex;
+  }
+  .articleList{
+    gap: 64px;
+    padding: 0;
+  }
+  .articleList li{
+    width: auto;
+    margin-bottom: 0;
+    /* margin-bottom: 64px; */
+  }
+  .articleList li:last-of-type{
+    margin-bottom: 0;
+  }
+  .wrapRight{
+    /* margin: 0 24px 0 16px; */
+    margin-left: 16px;
+  }
+  .wrapRight h4{
+    margin: 16px 0;
+  }
+  .articleList li a{
+    margin: 0;
+  }
+  .tagDate{
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+  }
+  .tagDate div{
+    margin-right: 16px;
+  }
+  .desktopP{
+    display: block;
+  }
+  .wrapRight p:first-of-type{
+    display: none;
+  }
+  .wrapRight p:last-of-type{
+    display: block;
+  }
+}

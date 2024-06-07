@@ -1,6 +1,6 @@
 /* -------------[ Mobile First] ------------------ */
 /* service */
-.service h3.title{
+.services h3.title{
   margin-top: 0;
 }
 /* process */
@@ -120,7 +120,10 @@ ul.quizList li{
 
 /* -------------[ iPad mini ] ------------------ */
 @media(min-width: 768px){
-
+  /* service */
+  .services{
+    background-image: none;
+  }
   /* QA */
   ul.quizList{
     display: flex;
@@ -135,7 +138,6 @@ h3.title, .QA h3.title{
   margin-bottom: 80px;
   font-size: 32px;
 }
-
 /* process */
 .process, .pricing, .workWrap, .QA{
   padding: 80px 0 120px;
@@ -218,7 +220,4 @@ ul.workList li img{
   width: 465px;
   font-size: 20px;
  }
-
-
-
 }
